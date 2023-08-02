@@ -63,7 +63,7 @@ vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 
 vim.keymap.set("i", "<C-c>", "<Esc>")
 
-vim.keymap.set("n", "<leader>g", "<cmd>FloatermNew lazygit<CR>")
+vim.keymap.set("n", "<leader>g", "<cmd>Git<CR>")
 
 vim.keymap.set("t", "<c-t>", "<c-\\><c-n><cmd>FloatermToggle --auto_close<CR>")
 
