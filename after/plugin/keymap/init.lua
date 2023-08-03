@@ -26,6 +26,8 @@ vim.keymap.set("n", "<leader><leader>", function()
   vim.cmd("so")
 end)
 
+vim.keymap.set("n", "<leader>g", "<cmd>Git<CR>")
+
 vim.keymap.set("i", "<c-j>", "<cmd>lua require'luasnip'.jump(1)<CR>")
 vim.keymap.set("s", "<c-j>", "<cmd>lua require'luasnip'.jump(1)<CR>")
 vim.keymap.set("i", "<c-k>", "<cmd>lua require'luasnip'.jump(-1)<CR>")
@@ -63,8 +65,6 @@ vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 
 vim.keymap.set("i", "<C-c>", "<Esc>")
 
-vim.keymap.set("n", "<leader>g", "<cmd>Git<CR>")
-
-vim.keymap.set("t", "<c-t>", "<c-\\><c-n><cmd>FloatermToggle --auto_close<CR>")
-
+vim.keymap.set("n", "gj", "<cmd>diffget //2<CR>zz")
+vim.keymap.set("n", "gf", "<cmd>diffget //3<CR>zz")
 

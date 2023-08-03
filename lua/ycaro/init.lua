@@ -4,4 +4,5 @@ require("ycaro.nvim-tree")
 require("ycaro.setup")
 require("ycaro.treesitter")
 require("ycaro.null-ls")
+require("ycaro.dap")
 

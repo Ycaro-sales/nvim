@@ -2,7 +2,6 @@ return {
   --teste
   'nvim-lua/plenary.nvim',
   'tpope/vim-repeat',
-  'tpope/vim-fugitive',
   'mbbill/undotree',
   'nvim-telescope/telescope.nvim',
   'kyazdani42/nvim-web-devicons',
@@ -10,16 +9,15 @@ return {
   {('nvim-treesitter/nvim-treesitter'), build = ':TSUpdate' },
   'ThePrimeagen/harpoon',
   'github/copilot.vim',
+
   --Telescope plugins
   'nvim-telescope/telescope-dap.nvim',
-  {
-    'nvim-telescope/telescope-fzf-native.nvim',
-    build = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build',
-  },
   'nvim-tree/nvim-tree.lua',
+{ 'nvim-telescope/telescope-fzf-native.nvim', build = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' },
 
   --Treesitter
   'nvim-treesitter/nvim-treesitter-textobjects',
+  'nvim-treesitter/nvim-treesitter-context',
   'windwp/nvim-ts-autotag',
   { 'Wansmer/treesj', config = function()
     require('treesj').setup({
@@ -64,12 +62,13 @@ return {
     'utilyre/barbecue.nvim',
     dependencies = { 'smiteshp/nvim-navic' },
     config = function() require('barbecue').setup() end,
-  }, 
+  }, 'voldikss/vim-floaterm',
   'smiteshP/nvim-navbuddy',
   'MunifTanjim/nui.nvim',
 
   --Coments
   'tpope/vim-commentary',
+  'tpope/vim-fugitive',
 
   --Debug
   'mfussenegger/nvim-dap',
@@ -102,12 +101,17 @@ return {
   'ray-x/lsp_signature.nvim',
   'jose-elias-alvarez/null-ls.nvim',
   'jose-elias-alvarez/typescript.nvim',
+  'dmmulroy/tsc.nvim',
+  
 
   { 'folke/trouble.nvim', config = function() require('trouble').setup { } end },
 
   --Preview
   -- 'frabjous/knap',
-   
+
+  --Colors
+  'NvChad/nvim-colorizer.lua',
+
   --Colorschemes
   'ellisonleao/gruvbox.nvim',
   'neanias/everforest-nvim',

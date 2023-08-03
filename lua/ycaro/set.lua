@@ -1,7 +1,18 @@
 local vim = vim
---vim.opt.guicursor = ""
-vim.opt.clipboard = "unnamedplus"
+
 vim.notify = require("notify")
+local notify = vim.notify
+
+vim.notify = function(msg, ...)
+
+  if msg:match("warning: multiple different client offset_encodings") then
+    return
+  end
+    notify(msg, ...)
+end
+
+--vim.opt.guicursor = ""
+-- vim.opt.clipboard = "unnamedplus"
 
 -- vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
