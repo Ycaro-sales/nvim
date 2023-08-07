@@ -6,7 +6,6 @@ return {
   'mbbill/undotree',
   'nvim-telescope/telescope.nvim',
   'kyazdani42/nvim-web-devicons',
-  'rcarriga/nvim-notify',
   {('nvim-treesitter/nvim-treesitter'), build = ':TSUpdate' },
   'ThePrimeagen/harpoon',
   'github/copilot.vim',
