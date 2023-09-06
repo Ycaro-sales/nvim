@@ -1,8 +1,12 @@
 local vim = vim
 
+vim.keymap.set("n", "<F4>", "<cmd>make clean<CR>")
+vim.keymap.set("n", "<F5>", "<cmd>make<CR>")
+
 vim.keymap.set("n", "gd", "<cmd>Telescope lsp_definitions <CR>zz")
 vim.keymap.set("n", "gr", "<cmd>Telescope lsp_references <CR>zz")
 vim.keymap.set("n", "gi", "<cmd>Telescope lsp_implementations<CR>zz")
+vim.keymap.set("n", "gf", "<cmd>ObsidianFollowLink<CR>")
 vim.keymap.set("n", "<leader>o", "<cmd>Navbuddy<CR>")
 
 vim.keymap.set("n", "<leader>s", "<cmd>TSJToggle<CR>")

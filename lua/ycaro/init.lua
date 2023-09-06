@@ -5,4 +5,5 @@ require("ycaro.setup")
 require("ycaro.treesitter")
 require("ycaro.null-ls")
 require("ycaro.dap")
+require("ycaro.obsidian")
 
